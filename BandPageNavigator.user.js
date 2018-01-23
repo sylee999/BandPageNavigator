@@ -43,11 +43,11 @@
 
         // create prev and next image
         var prevImg = document.createElement("img");
-        prevImg.setAttribute("src", "https://assets-cdn.github.com/images/icons/emoji/octocat.png");
+        prevImg.setAttribute("src", "https://github.com/sylee999/BandPageNavigator/raw/master/link-arrow.png");
         prevImg.style.height = "16px";
         prevImg.style.width = "16px";
         var nextImg = document.createElement("img");
-        nextImg.setAttribute("src", "https://assets-cdn.github.com/images/icons/emoji/octocat.png");
+        nextImg.setAttribute("src", "https://github.com/sylee999/BandPageNavigator/raw/master/link-arrow.png");
         nextImg.style.height = "16px";
         nextImg.style.width = "16px";
 
