@@ -36,20 +36,20 @@
             return;
         }
 
-        // create prev and next url
-        var prevUrl = String.format("https://band.us/band/{0}/post/{1}", currentUrl[4], Number(currentUrl[6])-1);
-        var nextUrl = String.format("https://band.us/band/{0}/post/{1}", currentUrl[4], Number(currentUrl[6])+1);
-        console.log("prevUrl:" + prevUrl + ", nextUrl:" + nextUrl);
-
         // create prev and next image
         var prevImg = document.createElement("img");
         prevImg.setAttribute("src", "https://github.com/sylee999/BandPageNavigator/raw/master/link-arrow.png");
         prevImg.style.height = "16px";
         prevImg.style.width = "16px";
+        prevImg.style.cursor = "pointer";
+        prevImg.setAttribute("onclick", String.format("javascript:location.href='https://band.us/band/{0}/post/{1}';", currentUrl[4], Number(currentUrl[6])-1));
         var nextImg = document.createElement("img");
         nextImg.setAttribute("src", "https://github.com/sylee999/BandPageNavigator/raw/master/link-arrow.png");
         nextImg.style.height = "16px";
         nextImg.style.width = "16px";
+        nextImg.style.transform = "rotate(180deg)";
+        nextImg.style.cursor = "pointer";
+        nextImg.setAttribute("onclick", String.format("javascript:location.href='https://band.us/band/{0}/post/{1}';", currentUrl[4], Number(currentUrl[6])+1));
 
         // create prev and next div node
         var prevLink = document.createElement("li");
